@@ -1,0 +1,161 @@
+:root {
+    --bglist:linear-gradient(
+        50deg,rgb(122, 82, 230),rgb(64, 161, 234)
+    ); 
+    --input:rgb(84, 49, 200); 
+    ---btn:rgb(104, 117, 239); 
+    --btnHover:rgb(66, 83, 230);
+    --ul:linear-gradient(
+        -50deg,rgb(91, 82, 222,0.2),rgb(55, 88, 217,0.5) 
+    );  
+    --li:rgb(56, 78, 200);
+    --liHover:rgb(40, 56, 151); 
+    --radius:13px; 
+    --liIconBg:rgb(32, 32, 159); 
+    --liIconBgHover:rgb(113, 153, 232);
+}
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+    box-sizing: border-box; 
+    color: white;
+}
+body { 
+    display: flex;
+    background: rgb(59 84 132); 
+    font-family: 'Montserrat', sans-serif; 
+    
+    
+} 
+.second { 
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    background: var(--bglist);  
+    box-shadow: 8px 16px 24px 6px rgba(71, 78, 199, 0.5);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 440px;
+    height: 80vh; 
+    border-radius: 25px;
+} 
+.second h1 {
+    font-size: 50px; 
+    padding: 20px 10px;
+}  
+.add-box {
+    display: flex;
+    width: 80%;
+    
+}
+.second input {
+    font-size: 20px;
+    width: 100%; 
+    padding: 8px;
+    outline: none;
+    border: none; 
+    color: var(--input);
+} 
+.add-box button {
+    border:none;
+    padding: 8px;
+    border-top-right-radius:9px; 
+    cursor: pointer; 
+    background: var(---btn); 
+    font-size: 16px; 
+    font-family: 'Secular One', sans-serif;  
+    transition: all .3s ease;
+   
+} 
+.add-box button:hover {
+    background: var(--btnHover);
+} 
+.second ul {
+    position: absolute;
+    top: 62%;
+    left: 50%; 
+    width: 80%; 
+    height: 66%;
+    transform: translate(-50%,-50%);
+    background:var(--ul); 
+    border-radius: 2px;   
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+    
+   
+} 
+.second ul li {
+    width: 100%;
+    border-top-right-radius:var(--radius);
+    padding: 10px ;
+    display: flex;
+    justify-content: space-between; 
+    position: relative;  
+    background: var(--li);
+    cursor: pointer; 
+    transition: all .2s;
+
+}  
+.second ul li:hover {
+    background: var(--liHover);
+}
+.second ul li button { 
+    position: absolute;
+    border: none;
+    background: var(--liIconBg);
+    top: 0%;
+    right: 0%; 
+    height: 100%;  
+    width: 14%; 
+    padding: 16px;
+    border-top-right-radius:var(--radius); 
+    cursor: pointer;   
+    opacity: 0.2; 
+    z-index: 2;
+   
+    
+} 
+.second ul li i { 
+    position: absolute;
+    border: none;
+    background: var(--liIconBg);
+    top: 0%;
+    right: 0%; 
+    height: 100%;  
+    padding: 16px;
+    border-top-right-radius:var(--radius); 
+    cursor: pointer;  
+    font-size: 15px; 
+    z-index: 1;
+}  
+.second ul li button:hover i, 
+.second ul li button:hover { 
+    
+    background: var(--liIconBgHover);
+} 
+.first {
+    position: absolute;
+    left: 50%;
+    top: 24%; 
+    width: 100%;
+    transform: translate(-50%,-50%); 
+    display: flex; 
+    text-align: center;
+    padding: 16px;
+}
+.first input {
+    font-size: 20px;
+    width: 86%;  
+    margin: 0 auto;
+    padding: 8px;
+    outline: none;
+    border: none; 
+    color: var(--input);
+}
